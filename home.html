@@ -2,13 +2,389 @@
 
 <html>
   <head>
-    <title>INSERT TITLE HERE!</title>
+    <title>Responsive Redesign Libgen</title>
     <link rel="stylesheet" href="index.css">
-    <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
   </head>
 
   <body>
-    <!-- TODO: put your HTML code here! -->
+    <a name="top"></a>
+    <nav class="navbar fixed-top navbar-expand-md navbar-light fixed-top" id="top-navbar">
+      <div id="navbarResponsive" class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item js-scroll-trigger">
+            <a style="text-decoration: none;" href="#usability">Usability Analysis</a>
+          </li>
+          <li class="nav-item js-scroll-trigger">
+            <a style="text-decoration: none;" href="#visuals">Visual Design</a>
+          </li>
+          <li class="nav-item js-scroll-trigger">
+            <a style="text-decoration: none;" href="#personas">Responsive Redesign</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class ="d-flex flex-column justify-content-center align-items-center top-pane anime">
+        <h1 class="text-dark text-center display-1" style="font-size:6vw; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">RESPONSIVE REDESIGN</h1>
+        <h2 class="text-dark text-center display-3" style="font-size:6vw; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Project Libgen</h2>
+    </div>
+      
+
+      
+     <section id="usability">
+        <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-lg-12 col-sm-12 col-12 mx-auto">
+              <br><br><br>
+              <h2 class="text-dark text-center" style="font-size:4.5vw; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Part 1: Usability</h2>
+                <hr/>
+            </div>
+        </div>
+        <div class="d-flex flex-column justify-content-center align-items-center">
+          <br>
+          <h1 class="text-adjust" style="font-weight: lighter;">Introduction</h1>
+          <p style="font-size: larger;">
+            The perception of a good UI has revolutionized in the past decade, 
+            and some design ideas in the past are no longer favored by younger users today. 
+            The "file-sharing based shadow library website" <a href="https://libgen.lc/">Library Genesis </a>, 
+            though very useful for many students and scholars in getting access to books and articles, 
+            has a UI that could use some improvements to enhance user experience. 
+        </p>
+        <br>
+        <p style="font-size: larger; font-weight: bolder">
+          Here's the UI for Libgen:</p>
+        
+        <hr>
+        <br>
+        <div id="cartoon-image">
+          <img src="./images/libgen_og.png" alt="original libgen UI">
+        </div>
+        <p><i>Figure 1. The original webpage of Library Genesis (Libgen)</i></p>
+      </div>
+        <hr>
+        <div class="d-flex flex-column justify-content-center align-items-center">
+          <br>
+          <h1 class="d-flex flex-column justify-content-center" style="font-weight: lighter;">Usability Analysis</h1>
+          <br>
+          <div id="cartoon-image">
+            <img src="./images/usability-graph.png" alt="a donut graph showing the 5 elements of usability analysis">
+          </div>
+        </div>
+        <br>
+        <div class="d-flex flex-column justify-content-center align-items-center" style="background-color: rgba(251, 144, 5, 0.924);">
+          <br>
+          <h2 class="text-adjust" style="font-weight: inherit;">Learnability</h2>
+          <p class="text-adjust" style="font-size: larger;">
+            The current UI is relatively easy to learn for a specific group of users. 
+            The frequent users of the website are generally students, scholars, 
+            or book lovers who wants to get access to free public recourses and increase their knowledge. 
+            The search box is in the center and is very attention catching for the users. 
+            So the first thing a user in this category would do is to enter book names s/he has in mind, 
+            if s/he comes with  purpose of finding a very specific book. If the user doesn't have a book or article in mind, 
+            it is rather unlikely that the user would visit this website, 
+            since it is not easy to browse book options and new release on this website. 
+          </p>
+          <p class="text-adjust" style="font-size: larger;">
+            For users who doesn't read very often or are paperback lovers, 
+            the website would be rather confusing, as there's no clear instruction on what each button's functions are, 
+            what the users should input to the search box; how the users can get access to the source of the books or articles. 
+            The lack of information on the front page would cause this confusion. 
+            But after navigating the website for multiple times, 
+            the users should be able to use it rather effortlessly.
+          </p>
+          <br>
+        </div>
+        <br>
+        <div class="d-flex flex-column justify-content-center align-items-center" style="background-color: rgba(251, 214, 5, 0.924);">
+          <br>
+          <h2 class="text-adjust" style="font-weight: inherit;">Efficiency</h2>
+          <p class="text-adjust" style="font-size: larger;">
+            The website should be pretty efficient for users who have a clear goal of finding a book, 
+            but less so for those who want to explore the website and see what they have to offer, 
+            since there are too many information listed without a clear structure. 
+          </p>
+          <p class="text-adjust" style="font-size: larger;">
+            The website is pretty inefficient for those who upload information, 
+            as there are many options, less hierarchy between options, making it hard to find things sometimes. 
+          </p>
+          <br>
+        </div>
+        <br>
+        <div class="d-flex flex-column justify-content-center align-items-center" style="background-color: rgba(61, 173, 95, 0.924);">
+          <br>
+          <h2 class="text-adjust" style="font-weight: inherit;">Memorability</h2>
+          <p class="text-adjust" style="font-size: larger;">
+            The front page is pretty memorable, since old users of the Libgen website are 
+            rather unlikely to forget the steps to get access to their desired books or articles. 
+            However, old users are unlikely to explore other parts of the front page, since the webpage is 
+            rather disorganized and it is hard to tell the hierarchy between different links and dropdowns. 
+          </p>
+          <p class="text-adjust" style="font-size: larger;">
+            The other type of users, the users who would upload the media files they acquired to 
+            the website are more familiar with different buttons, dropdowns, and where each link leads 
+            to. It wouldn't be hard to them to pick up where everything is for them to upload information. 
+            Yet the website is not ideal for them to navigate, especially with multiple options under each dropdown, 
+            and there isn't much color contrast between different buttons to help with memorization.
+          </p>
+          <br>
+        </div>
+        <br>
+        <div class="d-flex flex-column justify-content-center align-items-center" style="background-color: rgba(153, 84, 180, 0.924);">
+          <br>
+          <h2 class="text-adjust" style="font-weight: inherit;">Satisfaction</h2>
+          <p class="text-adjust" style="font-size: larger;">
+            The user satisfaction of the website should be moderate, 
+            given that the user is happy about finding the materials s/he needs or uploading new content for public browsing.
+            However, satisfaction rate might decrease due to convolusion in operating the front page and the general searching experience.
+          </p>
+          <br>
+        </div>
+        <br>
+        <div class="d-flex flex-column justify-content-center align-items-center" style="background-color: rgba(81, 188, 250, 0.924);">
+          <br>
+          <h2 class="text-adjust" style="font-weight: inherit;">Few Errors</h2>
+          <p class="text-adjust" style="font-size: larger;">
+            In general, the website doesn't have much errors, but sometimes the link can lead users to very confusing pages, andthe labeling of many buttons are not really understandable.
+            However, the amount of errors or indistinguishable text through clicking some link would leave users confused and the user experience isn't optimal. 
+          </p>
+          <br>
+        </div>
+        <hr>
+        <div class="d-flex flex-column justify-content-center align-items-center">
+          <br>
+          <h1 class="d-flex flex-column justify-content-center" style="font-weight: lighter;">Accessibility</h1>
+          <br>
+          <p style="font-size: larger; font-weight: bolder">
+            Here's the accessibility evaluation of Libgen by <a href="https://wave.webaim.org/report#/https://libgen.lc/#">WebAIM</a>:</p>
+          <br>
+            <div id="cartoon-image">
+            <img src="./images/accessibility_eval.png" alt="accessibility evaluation for the libgen site">
+          </div>
+        <br>
+        <h2 class="text-adjust" style="font-weight: inherit;">Commentary</h2>
+        <p class="text-adjust" style="font-size: larger;">
+          A very direct observation from evaluating the accessibility of the Libgen website is that many tags 
+          are widely exposed directly in the center of the front page, making the front page very noisy and unstructured. 
+          There are also two lists that are separated into top navbar and bottom navbar, which is not really efficient 
+          for users.
+        </p>
+      </div>
+    </section>
+
+
+    <section id="visuals">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 mx-auto">
+              <br><br><br>
+            <h2 class="text-dark text-center" style="font-size:4.5vw; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Part 2: Visual Design Evolution</h2>
+            <hr/>
+          </div>
+          <div class="d-flex flex-column justify-content-center align-items-center">
+            <br>
+            <h1 class="d-flex flex-column justify-content-center" style="font-weight: lighter;">Low-fidelity Wireframes</h1>
+            <br>
+            <p style="font-size: larger; font-weight: bolder">
+              Desktop Version:</p>
+            <br><br>
+              <div id="cartoon-image">
+              <img src="./images/Libgen Redesign Low-fi/Desktop.png" alt="low-fi desktop libgen design">
+            </div>
+            <br>
+            <p style="font-size: larger; font-weight: bolder">
+              Tablet and Mobile Version:</p>
+              <br><br>
+              <div id="cartoon-image">
+              <img src="./images/Libgen Redesign Low-fi/Tablet.png" alt="low-fi Tablet and phone libgen design">
+              <hr>
+              <br>
+            </div>
+          <div class="d-flex flex-column justify-content-center align-items-center small-pane">
+            <br>
+            <h1 class="d-flex flex-column justify-content-center" style="font-weight: lighter;">From Low-fidelity to High-fidelity</h1>
+            <p class="text-adjust" style="font-size: larger;">
+              The process from Low-fidelity wireframing to High-fidelity prototyping is a process of evaluating what's aesthetic, what's not; 
+              It's a process of adding more possibility of interaction to see which elements in a low-fi wireframe is unreasonable.
+              In this process, I decided upon a rather harmonious while not boring color palette to show consistency but also contrast when necessary.
+              I categorized elements so they belong to different groups to create a visual hierarchy. I used rather consistent fonts to add to the hierarchy.
+              Ultimately, I used this layout to emphasize important information to increase efficiency. There are changes from the low-fi to high-fi structure,
+              as I thought the latter more aesthetic and creates more spatial dynamics. 
+            </p>
+            <br>
+            <hr>
+          </div>
+          <div class="d-flex flex-column justify-content-center align-items-center">
+            <br>
+            <br><br>
+            <h1 class="d-flex flex-column justify-content-center" style="font-weight: lighter;">High-Fidelity Prototype</h1>
+            <br>
+            <p style="font-size: larger; font-weight: bolder">
+              Interactive Desktop Version with Figma (computer preferred to mobile):</p>
+            <br>
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FglH6cxPeno9r7wzNlO4Oxc%2FLibgen_Redesign%3Fnode-id%3D3%253A3%26viewport%3D120%252C654%252C0.3457973599433899%26scaling=scale-down-width&redirected=1" allowfullscreen></iframe>
+            <br><br><br>
+            <p style="font-size: larger; font-weight: bolder">
+              Tablet and Mobile Version:</p>
+              <br><br>
+              <div id="cartoon-image">
+              <img src="./images/hi-fi-ipad.png" alt="high-fi Tablet with annotation">
+              <br>
+            <div id="cartoon-image">
+              <img src="./images/hi-fi-phone.png" alt="high-fi phone with annotation">
+              <br>
+            </div>
+            <div id="cartoon-image">
+              <img src="./images/hi-fi-combo.png" alt="high-fi combo">
+              <br>
+            </div>
+          </div>
+        </div>
+        
+
+
+
+
+
+
+        <div class="d-flex flex-column justify-content-center align-items-center" style="background-color: rgba(207, 207, 190, 0.616);">
+            <br>
+            <h1 class="text-adjust" style="font-weight: lighter;">Questions for users</h1>
+            <ul style="font-size: large; font-weight: lighter;">
+                <li>Question 1: What goal do you want to achieve when you go to open the air purifier?</li>
+                <li>Question 2: Why did you put the air purifier here (the place where the person places it) in the room? Why not other places?</li>
+                <li>Question 3: Why did you press x, y, z button in the sequence you just chose?</li>
+                <li>Question 4: When the indication light turned yellow just now, what's your reaction? Why you think that way?</li>
+                <li>Question 5: How would you evaluate whether the operations you just did achieved the desired effect? Or simply, how would you evaluate how clean the air is in your room?</li>
+            </ul>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="card-group">
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <h5 class="card-title">Interviewee A</h5>
+                        <p class="card-text">Let the purifier face the middle of room, not corner</p>
+                        <p class="card-text">Would only turn on purifier if it's smoky or dusty</p>
+                        <p class="card-text">Tries to use purifier as fan and thinks it adds humidity</p>
+                        <p class="card-text">Doesn't know if it purifies the air, no measurement; feels stressed when seeing indication light turns red</p>
+                  </div>
+                </div>
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <h5 class="card-title">Interviewee B</h5>
+                    <p class="card-text">Would only turn on the purifier if room smells like chemical</p>
+                    <p class="card-text">Would leave the room after turning on the purifier since it's loud sometimes</p>
+                    <p class="card-text">Turns to auto mode instead of manual adjustments</p>
+                    <p class="card-text">Surprised to find the fan adjustable</p>
+                  </div>
+                </div>
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <h5 class="card-title">Interviewee M</h5>
+                    <p class="card-text">Didn't notice the switch at the back in the beginning and instead looked at control panel first</p>
+                    <p class="card-text">Lifts the purifier up using the handle from above, put close to working desk</p>
+                    <p class="card-text">Doesn't like the noise of the purifier</p>
+                    <p class="card-text">Often wonder if the indication light changes only as a placebo effect, since doesn't know if air is cleaner</p>
+                  </div>
+                </div>
+            </div>    
+        </div>
+        <br><br>
+        <div class="d-flex flex-column justify-content-center align-items-center" style="background-color: rgba(161, 179, 114, 0.616);">
+            <br>
+            <h2 class="text-adjust" style="font-weight: inherit;">Summary</h2>
+            <ul style="font-weight: lighter;">
+                <li>In general the interviewees all prefer opening the window for ventilation rather than using the air purifier.</li>
+                <li>Not all of them understand all the functions of the purifier: for convenience purposes, most of them just use "Auto" mode and would only turn to manuel adjustment if the air quality is very bad.</li>
+                <li>They all agree that it's hard to measure the effect of the purifier other than observing the indication light.</li>
+                <li>They would all put the purifier near the working desk/face the center of the room to facilitate air circulation.</li>
+                <li>The noise of the purifier troubles them often when it's functioning at a higher speed.</li>
+            </ul>
+            <p style="margin: 30px; margin-top: 10px; font-size: larger">"It'd be nice if there's a screen showing the data for pollutants in the air."</p>
+            <p style="margin: 30px; margin-top: 10px;">---Anonymous Interviewee</p>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="personas">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-12 col-sm-12 col-12 mx-auto">
+            <br><br><br>
+            <h2 class="text-dark text-center" style="font-size:4.5vw; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Personas</h2>
+            <hr/>
+            <div id="personas-images">
+              <img src="./images/Persona1.png" alt="persona1.">
+            </div>
+        </div>
+        </div>
+            <div class="d-flex flex-column justify-content-center align-items-center small-pane">
+                <br>
+                <h1 style="font-weight: inherit;">Explanation</h1>
+                <ul style="font-size: large; font-weight: lighter;">
+                    <li>Michael Sauft is an entry-level software engineer living in a big city. He recently moved to his new apartment with a housemate and finished furnishing his room. The Coronavirus stroke the city and he needs to work full-time at home.
+                    </li>
+                    <li>The interface problem that the user encounters: Michael likes fresh air a lot, so he would prioritize window instead of air purifier; but 
+                        he wouldn't hold back from using the latter if there's chemical in the air. 
+                    </li>
+                    <li>Michael also finds it a bit hard to evaluate how good the air quality is even though the air purifier is functioning: the indication light might be blue but he doesn't know if there's still bad smell since he is in the environment for too long.</li>
+                    <li>Michael represents the users who live in city with small room and small windows for ventilation like that in Brown's dorm; he's also very busy that sometimes he might overlook air quality and would need a reliable purifier to handle bad air for him while he works on projects.</li>
+                </ul>
+            </div>
+        <br><br><br>
+        <div class="row">
+            <div class="col-md-12 col-lg-12 col-sm-12 col-12 mx-auto">
+              <div id="personas-images">
+                <img src="./images/Persona2.png" alt="persona2.">
+              </div>
+          </div>
+          </div>
+              <div class="d-flex flex-column justify-content-center align-items-center small-pane">
+                  <br>
+                  <h1 style="font-weight: inherit;">Explanation</h1>
+                  <ul style="font-size: large; font-weight: lighter;">
+                      <li>Louise Angelo is a married mother of two and a housewife living in the suburb of a city. Recently there’s a wild fire in the mountain area she’s close to and the air quality has turned pretty bad.</li>
+                      <li>The interface problem that the user encounters: Louise likes fresh air a lot, unless the smog is really bad, she will not use the air purifier. Her children's health is of primary concern for her so that increase the likelihood that she uses it.</li>
+                      <li>Louise also lives in a dry area, sometimes she feels the air purifier can add humidity to the house, yet it's a bit hard to measure, as the indication light only shows the air quality, not humidity.</li>
+                      <li>Louise represents the users who live in city or suburban area with bad air quality (not necessarily due to wildfire). The inspiration comes from interviewee A's comment on using the purifier when weather is very bad outside, and A's comment on adding humidity.</li>
+                  </ul>
+              </div>
+          </div>
+    </section>
+
+
+    <section id="storyboard">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-12 col-sm-12 col-12 mx-auto">
+            <br><br><br>
+            <h2 class="text-dark text-center" style="font-size:4.5vw; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Storyboard</h2>
+            <hr/>
+          </div>
+        </div>
+        <div class="row">
+            <div id="storyboard-image">
+                <img src="./images/storyboard.JPG" alt="Story board of Louise Angelo.">
+              </div>
+        </div>
+        <div class="row">
+            <div class="d-flex flex-column justify-content-center align-items-center small-pane">
+                <br>
+                <h1 class="text-adjust" style="font-weight: inherit;">The Storyboard for Louise Angelo</h1>
+                <p style="margin: 30px; margin-top: 10px; font-size: larger;">The storyboard for Louise Angelo shows the user's journey of using the air purifier to make her house a cleaner and healthier place both for herself and her children.
+                    As a mom and a housewife, she uses the air purifier in the room during the time when air quality outdoor is very bad. Putting the purifier in the middle of the room, Louise can maximize the function of the air purifier; by setting the mode to "Auto", she and her children can go on with their daily tasks or daily fun.
+                </p>
+            </div>
+            <br><br><br>
+        </div>
+        <a href="#top">Back to top</a>
+      </div>
+    </section>
   </body>
 </html>

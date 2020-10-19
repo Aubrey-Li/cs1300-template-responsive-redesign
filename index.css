@@ -1,1 +1,162 @@
-/* Put your style information here! */
+#top-navbar {
+    background-color: rgb(0, 40, 104);
+    animation: fade-down 1000ms forwards;
+    opacity: 0;
+}
+
+@keyframes fade-down {
+    from {
+        opacity: 0;
+        transform: translateY(-1.25em);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0em);
+    }
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1em;
+    margin-right: 1em;
+    font-family: 'Open Sans', sans-serif;
+    transition: 0.2s;
+}
+
+.nav-item:hover,
+.nav-item:focus {
+    font-size: 2em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia, 'Times New Roman', Times, serif"
+}
+
+h2 {
+    font-weight: 400;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.card-img-top {
+    border-radius: 0px;
+}
+
+.anime {
+    animation: fade-up 1200ms forwards;
+}
+
+@keyframes fade-up {
+    from {
+        opacity: 0;
+        transform: translateY(0em);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(-1.25em);
+    }
+}
+
+.top-pane {
+    background: url(./images/beach-book.jpg) center fixed;
+    background-size: cover;
+    height: calc(100vh - 64px);
+}
+
+img.resize {
+    max-width: 40%;
+    max-height: 50%;
+}
+
+.small-pane {
+    background: url(./images/tabletop.jpg) center fixed;
+    background-size: cover;
+}
+
+.card-title {
+    justify-content: center;
+}
+
+#about-text {
+    animation: from-right 600ms forwards;
+    opacity: 0;
+    animation-delay: 600ms;
+}
+
+@keyframes from-right {
+    from {
+        opacity: 0;
+        transform: translateX(1.25em);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0em);
+    }
+}
+
+#about-image img {
+    animation: from-left 800ms forwards;
+    opacity: 0;
+    animation-delay: 400ms;
+    justify-content: center;
+   max-width: 230%;
+   height: auto;
+}
+
+#cartoon-image img {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin-left: 0%;
+    margin-bottom: 5%;
+    max-width: 100%;
+    height: auto;
+    border-color: gray;
+}
+
+@keyframes from-left {
+    from {
+        opacity: 0;
+        transform: translateX(-1.25em);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0em);
+    }
+}
+
+.text-adjust {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+li {
+    list-style: none;
+    margin: 10px;
+}
+
+
+#personas-images img {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin-left: 0%;
+    margin-bottom: 5%;
+    max-width: 100%;
+    height: auto;
+}
+
+#storyboard-image img {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-left: 0%;
+    margin-bottom: 5%;
+    max-width: 100%;
+    height: auto;
+}
